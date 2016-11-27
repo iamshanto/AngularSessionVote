@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+span.vote{
+    width: 10px;
+    background-color: aqua;
+    border: 1px gray solid;
+    padding: 3px;
+    margin: 1px;
+}
+
+.add-vote{
+    padding: 3px;
+    margin: 3px;
+}
+
+.winner span.vote{
+    background-color: green;
+}
+
+.looser span.vote{
+    background-color: red;
+}

@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<p>
+  vote works!
+</p>
+
+<div *ngFor="let candidate of candidates">
+  {{candidate.name}}
+  <button (click)="addVote(candidate)" class="add-vote">Vote</button>
+  <vote [candidate]="candidate" [ngClass]="{'winner': maxVote == candidate.getVoteCount(), 'looser': minVote == candidate.getVoteCount()}">
+  </vote>
+</div>
