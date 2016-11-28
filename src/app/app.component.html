@@ -5,6 +5,6 @@
 <div *ngFor="let candidate of candidates">
   {{candidate.name}}
   <button (click)="addVote(candidate)" class="add-vote">Vote</button>
-  <vote [candidate]="candidate" [ngClass]="{'winner': maxVote == candidate.getVoteCount(), 'looser': minVote == candidate.getVoteCount()}">
+  <vote [candidate]="candidate" [ngClass]="{'winner': maxVote == candidate.getVoteCount(), 'looser': minVote == candidate.getVoteCount(), 'tie': minVote == maxVote}">
   </vote>
 </div>

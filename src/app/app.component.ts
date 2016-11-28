@@ -20,6 +20,7 @@ export class AppComponent {
       new Candidate('C', 'c', []),
       new Candidate('D', 'd', [])
     ];
+    this.refreshVoteCount();
   }
 
   addVote(candidate: Candidate){
