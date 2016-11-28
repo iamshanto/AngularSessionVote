@@ -1,1 +1,2 @@
+<input id="vote-id-input" type="checkbox" (click)="voteState.voteInput=!voteState.voteInput" [checked]="voteState.voteInput"><label for="vote-id-input">Ask for Voter ID?</label>
 <candidate (voteCust)="refreshVoteCount()" [voteState]="voteState" *ngFor="let candidate of candidates" [candidate]="candidate"></candidate>

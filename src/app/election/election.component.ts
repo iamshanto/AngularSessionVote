@@ -12,7 +12,8 @@ export class ElectionComponent implements OnInit {
   candidates:Candidate[] = [];
   voteState = {
     minVote: 0,
-    maxVote: 0
+    maxVote: 0,
+    voteInput: false
   };
 
   constructor() { }
@@ -33,10 +34,8 @@ export class ElectionComponent implements OnInit {
       allCount.push(this.candidates[i].getVoteCount());
     }
 
-    this.voteState = {
-      minVote: Math.min(...allCount),
-      maxVote: Math.max(...allCount)
-    }
+    this.voteState.minVote = Math.min(...allCount);
+    this.voteState.maxVote = Math.max(...allCount);
   }
 
 }
