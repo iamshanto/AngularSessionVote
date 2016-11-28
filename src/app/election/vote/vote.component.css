@@ -1,0 +1,10 @@
+.winner span.vote{
+    background-color: green;
+}
+
+.looser span.vote{
+    background-color: red;
+}
+.tie span.vote{
+    background-color: yellow;
+}

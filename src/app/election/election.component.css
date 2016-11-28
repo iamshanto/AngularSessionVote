@@ -1,0 +1,23 @@
+:host >>> span.vote{
+    width: 10px;
+    background-color: aqua;
+    border: 1px gray solid;
+    padding: 3px;
+    margin: 1px;
+}
+
+:host >>> .add-vote{
+    padding: 3px;
+    margin: 3px;
+}
+
+:host >>> .winner span.vote{
+    background-color: green;
+}
+
+:host >>> .looser span.vote{
+    background-color: red;
+}
+:host >>> .tie span.vote{
+    background-color: yellow;
+}

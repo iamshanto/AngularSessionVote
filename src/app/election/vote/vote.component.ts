@@ -1,5 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {Candidate} from "./entity/candidate";
+import {Vote} from "./vote.class";
 
 @Component({
   selector: 'vote',
@@ -8,7 +8,7 @@ import {Candidate} from "./entity/candidate";
 })
 export class VoteComponent implements OnInit {
 
-  @Input() candidate: Candidate;
+  @Input() votes: Vote[] = [];
 
   ngOnInit() {
 

@@ -1,0 +1,6 @@
+<div [ngClass]="{'winner': voteState.maxVote == candidate.getVoteCount(), 'looser': voteState.minVote == candidate.getVoteCount(), 'tie': voteState.minVote == voteState.maxVote}">
+{{candidate.name}}
+<button (click)="addVote(candidate)" class="add-vote">Vote</button>
+<vote [votes]="candidate.votes"></vote>
+{{ candidate.getVoteCount() }}
+</div>

@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { VoteComponent } from './vote/vote.component';
+import { ElectionComponent } from './election/election.component';
+import { CandidateComponent } from './election/candidate/candidate.component';
+import { VoteComponent } from './election/vote/vote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ElectionComponent,
+    CandidateComponent,
     VoteComponent
   ],
   imports: [
